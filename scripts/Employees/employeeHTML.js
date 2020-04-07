@@ -5,7 +5,7 @@ const eachEmployee = (employeeObject, computerObject) => {
         <p>Age: ${employeeObject.age}</p>
         <div>
             <h5>Computer Assigned</h5>
-            <p>Year: ${comp.year}  Model: ${comp.model}</p>
+            <p>Model: ${computerObject.year} ${computerObject.model}</p>
              
         </div>
     </section>
