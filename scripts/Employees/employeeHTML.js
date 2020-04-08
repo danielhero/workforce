@@ -1,17 +1,21 @@
-const eachEmployee = (employeeObject, computerObject, deptObject) => {
+const eachEmployee = (employeeObject, computerObject, deptObject, officeObject) => {
     return `
     <div class="employeeInfo">
         <header class="employeeInfo__name">
-            <h1>${employeeObject.firstName} ${employeeObject.lastName}</h1>
-            <h6>Age: ${employeeObject.age}</h6>
+            <h3>${employeeObject.firstName} ${employeeObject.lastName}</h3>
+            <h6></h6>
         </header>
+        
+        <section class="employeeInfo__age">
+            Age: ${employeeObject.age}
+        </section>
         
         <section class="employeeInfo__computer">
             Currently using a ${computerObject.year} ${computerObject.model}.
         </section>
 
         <section class="employeeInfo__department">
-            Works in the ${deptObject.deptName} department.
+            Works in the ${deptObject.deptName} department at the ${officeObject.city} office.
         </section>
     </div>
     `

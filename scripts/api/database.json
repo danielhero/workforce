@@ -9,15 +9,18 @@
             "id": 2,
             "model": "Microsoft Surface",
             "year": 2017
-        },{
+        },
+        {
             "id": 3,
             "model": "Dell XPS",
             "year": 2016
-        },{
+        },
+        {
             "id": 4,
             "model": "Macbook Air",
             "year": 2019
-        },{
+        },
+        {
             "id": 5,
             "model": "HP Spectre",
             "year": 2017
@@ -32,7 +35,8 @@
             "lastName": "Ittycheriah",
             "age": 33,
             "computerId": 1,
-            "deptId":4
+            "deptId":4,
+            "officeId": 2
         },
         {
             "id": 2,
@@ -40,7 +44,8 @@
             "lastName": "Mullen",
             "age": 34,
             "computerId": 4,
-            "deptId":3
+            "deptId":3,
+            "officeId": 1
         },
         {
             "id": 3,
@@ -48,7 +53,8 @@
             "lastName": "Spiers",
             "age": 41,
             "computerId": 3,
-            "deptId": 2
+            "deptId": 2,
+            "officeId": 2
         },
         {
             "id": 4,
@@ -56,7 +62,8 @@
             "lastName": "Bennet",
             "age": 28,
             "computerId": 5,
-            "deptId": 1
+            "deptId": 1,
+            "officeId": 3
         },
         {
             "id": 5,
@@ -64,7 +71,8 @@
             "lastName": "Curry",
             "age": 55,
             "computerId": 2,
-            "deptId": 3
+            "deptId": 3,
+            "officeId": 1
         }
     ],
 
@@ -86,5 +94,20 @@
             "deptName": "IT"
         }
 
+    ],
+
+    "offices": [
+        {
+            "id": 1,
+            "city": "New York"
+        },
+        {
+            "id": 2,
+            "city": "Charlotte"
+        },
+        {
+            "id": 3,
+            "city": "Phoenix"
+        }
     ]
 }
