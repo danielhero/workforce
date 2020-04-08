@@ -31,35 +31,60 @@
             "firstName": "Rainu",
             "lastName": "Ittycheriah",
             "age": 33,
-            "computerId": 1
+            "computerId": 1,
+            "deptId":4
         },
         {
             "id": 2,
             "firstName": "Jacqueline",
-            "lastName": "Mullin",
+            "lastName": "Mullen",
             "age": 34,
-            "computerId": 4
+            "computerId": 4,
+            "deptId":3
         },
         {
             "id": 3,
             "firstName": "Mark",
             "lastName": "Spiers",
             "age": 41,
-            "computerId": 3
+            "computerId": 3,
+            "deptId": 2
         },
         {
             "id": 4,
-            "firstName": "George",
-            "lastName": "Abikaram",
+            "firstName": "Kerra",
+            "lastName": "Bennet",
             "age": 28,
-            "computerId": 5
+            "computerId": 5,
+            "deptId": 1
         },
         {
             "id": 5,
             "firstName": "Arthur",
             "lastName": "Curry",
             "age": 55,
-            "computerId": 2
+            "computerId": 2,
+            "deptId": 3
         }
+    ],
+
+    "departments": [
+        {
+            "id": 1,
+            "deptName": "Finance"
+        },
+        {
+            "id": 2,
+            "deptName": "Quality Assurance"
+        },
+        {
+            "id": 3,
+            "deptName": "Sales"
+        },
+        {
+            "id": 4,
+            "deptName": "IT"
+        }
+
     ]
 }
