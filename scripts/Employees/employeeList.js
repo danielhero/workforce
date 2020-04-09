@@ -15,6 +15,9 @@ const render = employeesToRender => {
     const computers = useComputers()
     const departments = useDepartments()
     const offices = useOffices()
+    const customers = useCustomers()
+    const customerRelationships = useEmployeeCustomers()
+    
     
     
 
@@ -27,14 +30,20 @@ const render = employeesToRender => {
 
             const foundOffice = offices.find(office => office.id === employeeObject.officeId)
 
-            return eachEmployee(employeeObject, foundComputer, foundDepartment, foundOffice)
+            const relationship = customerRelationships.filter(customerRelationships => customerRelationships.employeeId === employeeObject.id)
+            
+            const foundCustomers = relationship.map(r => {
+             
+                return  customers.find(customer => r.customerId === customer.id)
+            })
+                
+            return eachEmployee(employeeObject, foundComputer, foundDepartment, foundOffice, foundCustomers)
         }
     ).join("")
 }
 
 export const EmployeeList = () => {
     const employees = useEmployees()
-    
 
     render(employees)
 }
