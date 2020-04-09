@@ -3,6 +3,9 @@ import { useComputers } from "../Computers/computerDataProvider.js"
 import { useDepartments } from "../Departments/departmentDataProvider.js"
 import { useOffices } from "../Offices/officeDataProvider.js"
 import eachEmployee from "./employeeHTML.js"
+import { useCustomers } from "../Customers/customerDataProvider.js"
+import { useEmployeeCustomers } from "../Customers_Employees/employeeCustomerDataProvider.js"
+
 
 
 
@@ -12,6 +15,8 @@ const render = employeesToRender => {
     const computers = useComputers()
     const departments = useDepartments()
     const offices = useOffices()
+    
+    
 
     contentTarget.innerHTML = employeesToRender.map(
         (employeeObject) => {
@@ -29,6 +34,7 @@ const render = employeesToRender => {
 
 export const EmployeeList = () => {
     const employees = useEmployees()
+    
 
     render(employees)
 }
